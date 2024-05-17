@@ -9,12 +9,16 @@ import UIKit
 
 class ViewController: UITableViewController {
 
+    @IBOutlet var oneButton: UIButton!
+    
+    
     
     var picture = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Storm Viewer"
+        oneButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
@@ -43,6 +47,11 @@ class ViewController: UITableViewController {
             vc.selectedImage = picture[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    @objc func didTapButton(){
+        print("Button tapped")
+        
     }
     
 
