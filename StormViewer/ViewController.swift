@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
+    
     @IBOutlet var oneButton: UIButton!
     
     
@@ -50,10 +50,12 @@ class ViewController: UITableViewController {
     }
     
     @objc func didTapButton(){
-        print("Button tapped")
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController{
+            vc.selectedImage = picture[0]
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
         
     }
     
-
 }
-
