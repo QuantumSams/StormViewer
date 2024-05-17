@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C3DABE02BF71C4A000853E0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DABDF2BF71C4A000853E0 /* DetailViewController.swift */; };
+		7C3DABE22BF7628E000853E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DABE12BF7628E000853E0 /* LoginViewController.swift */; };
 		7CBDC2862BF709A7000501F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDC2852BF709A7000501F5 /* AppDelegate.swift */; };
 		7CBDC2882BF709A7000501F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDC2872BF709A7000501F5 /* SceneDelegate.swift */; };
 		7CBDC28A2BF709A7000501F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDC2892BF709A7000501F5 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		7C3DABDF2BF71C4A000853E0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7C3DABE12BF7628E000853E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7CBDC2822BF709A7000501F5 /* StormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBDC2852BF709A7000501F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CBDC2872BF709A7000501F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		7CBDC2842BF709A7000501F5 /* StormViewer */ = {
 			isa = PBXGroup;
 			children = (
+				7C3DABE12BF7628E000853E0 /* LoginViewController.swift */,
 				7CBDC2852BF709A7000501F5 /* AppDelegate.swift */,
 				7CBDC2872BF709A7000501F5 /* SceneDelegate.swift */,
 				7CBDC2892BF709A7000501F5 /* ViewController.swift */,
@@ -192,6 +195,7 @@
 				7CBDC28A2BF709A7000501F5 /* ViewController.swift in Sources */,
 				7CBDC2862BF709A7000501F5 /* AppDelegate.swift in Sources */,
 				7CBDC2882BF709A7000501F5 /* SceneDelegate.swift in Sources */,
+				7C3DABE22BF7628E000853E0 /* LoginViewController.swift in Sources */,
 				7C3DABE02BF71C4A000853E0 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

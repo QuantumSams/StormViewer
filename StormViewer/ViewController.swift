@@ -9,17 +9,13 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    @IBOutlet var oneButton: UIButton!
-    
-    
     
     var picture = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Storm Viewer"
-        oneButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-        
+        navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let fm = FileManager.default
@@ -48,14 +44,6 @@ class ViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
-    @objc func didTapButton(){
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController{
-            vc.selectedImage = picture[0]
-            navigationController?.pushViewController(vc, animated: true)
-        }
         
         
     }
-    
-}
