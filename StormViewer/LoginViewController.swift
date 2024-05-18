@@ -23,7 +23,6 @@ class LoginViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         emailField.returnKeyType = .done
         emailField.autocorrectionType = .no
         emailField.autocapitalizationType = .none
@@ -36,7 +35,6 @@ class LoginViewController: UIViewController {
         passwordField.delegate = self
         passwordField.isSecureTextEntry = true
     }
-    
     
 }
 
