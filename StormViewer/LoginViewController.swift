@@ -28,16 +28,16 @@ class LoginViewController: UIViewController {
 //        }
         
         guard let request = Endpoint.login(userModel: loginJSON).request else { return }
-        print(request.url)
         
         
+        let auth = AuthService()
         
-        AuthService.login(request: request) { [weak self] result in
+        auth.login(request: request) { [weak self] result in
             guard let self = self else { return }
             switch result{
             case.success(_):
-                print(AuthService.accessToken)
-                print(AuthService.refreshToken)
+                print(auth.accessToken)
+                print(auth.refreshToken)
                 
                 DispatchQueue.main.async { [weak self] in
                     guard let self = self else { return }

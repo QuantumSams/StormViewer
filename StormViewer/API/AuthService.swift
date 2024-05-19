@@ -18,10 +18,10 @@ enum ServiceError: Error{
 class AuthService {
     
     
-    static var accessToken: String = ""
-    static var refreshToken: String = ""
+    var accessToken: String = ""
+    var refreshToken: String = ""
     
-    static func login(request: URLRequest, completion: @escaping (Result<String, Error>) -> Void) {
+    func login(request: URLRequest, completion: @escaping (Result<String, Error>) -> Void) {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             
             guard let data = data else { if let error = error {
