@@ -13,11 +13,54 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordField : UITextField!
 
     @IBAction func oneButton(_ sender: UIButton) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "View") as? ViewController{
-            navigationController?.pushViewController(vc, animated: true)
+        
+        let loginJSON = UserLoginModel(email: emailField.text ?? "", password: passwordField.text ?? "")
+        
+        
+//        if(!Validator.isValidEmail(for: loginJSON.email)){
+//            print("Email not valid")
+//            return
+//        }
+//        
+//        if(!Validator.isPasswordValid(for: loginJSON.password)){
+//            print("Password not valid")
+//            return
+//        }
+        
+        guard let request = Endpoint.login(userModel: loginJSON).request else { return }
+        print(request.url)
+        
+        
+        
+        AuthService.login(request: request) { [weak self] result in
+            guard let self = self else { return }
+            switch result{
+            case.success(_):
+                print(AuthService.accessToken)
+                print(AuthService.refreshToken)
+                
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
+                    if let vc = self.storyboard?.instantiateViewController(withIdentifier: "View") as? ViewController{
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
+                }
+                break
+            case.failure(let error):
+                guard let error = error as? ServiceError else{return}
+                
+                switch error{
+                case .serverError(let string),
+                        .unknown(let string),
+                        .decodingError(let string):
+                    print(string)
+                    
+                }
+                
+            }
+            
         }
-        print(emailField.text!)
-        print(passwordField.text!)
+        
     }
     
    

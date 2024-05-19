@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C137D7D2BF8BDAB0053D627 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C137D7C2BF8BDAB0053D627 /* Validator.swift */; };
+		7C2FD1CA2BFA08C40091AA79 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FD1C82BFA08C40091AA79 /* TestViewController.swift */; };
+		7C2FD1CB2BFA08C40091AA79 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C2FD1C92BFA08C40091AA79 /* TestViewController.xib */; };
 		7C3DABE02BF71C4A000853E0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DABDF2BF71C4A000853E0 /* DetailViewController.swift */; };
 		7C3DABE22BF7628E000853E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DABE12BF7628E000853E0 /* LoginViewController.swift */; };
 		7CBDC2862BF709A7000501F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDC2852BF709A7000501F5 /* AppDelegate.swift */; };
@@ -26,9 +29,17 @@
 		7CBDC2C02BF70B19000501F5 /* nssl0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CBDC2B52BF70B19000501F5 /* nssl0051.jpg */; };
 		7CBDC2C12BF70B19000501F5 /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CBDC2B62BF70B19000501F5 /* nssl0091.jpg */; };
 		7CEF87EF2BF8A5580063F807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF87EE2BF8A5580063F807 /* Constants.swift */; };
+		7CEF87F52BF8A7600063F807 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF87F42BF8A7600063F807 /* Endpoint.swift */; };
+		7CEF87F72BF8AA410063F807 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF87F62BF8AA410063F807 /* HTTP.swift */; };
+		7CEF87FB2BF8B0080063F807 /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF87FA2BF8B0080063F807 /* UserLoginModel.swift */; };
+		7CEF87FE2BF8B1F70063F807 /* JSONresponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF87FD2BF8B1F70063F807 /* JSONresponse.swift */; };
+		7CEF88002BF8B2CF0063F807 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF87FF2BF8B2CF0063F807 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C137D7C2BF8BDAB0053D627 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		7C2FD1C82BFA08C40091AA79 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		7C2FD1C92BFA08C40091AA79 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		7C3DABDF2BF71C4A000853E0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7C3DABE12BF7628E000853E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7CBDC2822BF709A7000501F5 /* StormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +61,11 @@
 		7CBDC2B52BF70B19000501F5 /* nssl0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0051.jpg; sourceTree = "<group>"; };
 		7CBDC2B62BF70B19000501F5 /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
 		7CEF87EE2BF8A5580063F807 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7CEF87F42BF8A7600063F807 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7CEF87F62BF8AA410063F807 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		7CEF87FA2BF8B0080063F807 /* UserLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
+		7CEF87FD2BF8B1F70063F807 /* JSONresponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONresponse.swift; sourceTree = "<group>"; };
+		7CEF87FF2BF8B2CF0063F807 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,8 @@
 		7CBDC2792BF709A7000501F5 = {
 			isa = PBXGroup;
 			children = (
+				7C2FD1C82BFA08C40091AA79 /* TestViewController.swift */,
+				7C2FD1C92BFA08C40091AA79 /* TestViewController.xib */,
 				7CBDC2842BF709A7000501F5 /* StormViewer */,
 				7CBDC2832BF709A7000501F5 /* Products */,
 			);
@@ -82,6 +100,9 @@
 		7CBDC2842BF709A7000501F5 /* StormViewer */ = {
 			isa = PBXGroup;
 			children = (
+				7C137D7C2BF8BDAB0053D627 /* Validator.swift */,
+				7CEF87F92BF8AFF70063F807 /* Model */,
+				7CEF87F32BF8A7580063F807 /* API */,
 				7CEF87EE2BF8A5580063F807 /* Constants.swift */,
 				7C3DABE12BF7628E000853E0 /* LoginViewController.swift */,
 				7CBDC2852BF709A7000501F5 /* AppDelegate.swift */,
@@ -112,6 +133,25 @@
 				7CBDC2B62BF70B19000501F5 /* nssl0091.jpg */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		7CEF87F32BF8A7580063F807 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7CEF87F42BF8A7600063F807 /* Endpoint.swift */,
+				7CEF87F62BF8AA410063F807 /* HTTP.swift */,
+				7CEF87FF2BF8B2CF0063F807 /* AuthService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7CEF87F92BF8AFF70063F807 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CEF87FA2BF8B0080063F807 /* UserLoginModel.swift */,
+				7CEF87FD2BF8B1F70063F807 /* JSONresponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +224,7 @@
 				7CBDC2922BF709A8000501F5 /* Base in Resources */,
 				7CBDC2C12BF70B19000501F5 /* nssl0091.jpg in Resources */,
 				7CBDC2BA2BF70B19000501F5 /* nssl0041.jpg in Resources */,
+				7C2FD1CB2BFA08C40091AA79 /* TestViewController.xib in Resources */,
 				7CBDC28D2BF709A7000501F5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,10 +236,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEF87F52BF8A7600063F807 /* Endpoint.swift in Sources */,
+				7CEF87FB2BF8B0080063F807 /* UserLoginModel.swift in Sources */,
+				7CEF87FE2BF8B1F70063F807 /* JSONresponse.swift in Sources */,
 				7CBDC28A2BF709A7000501F5 /* ViewController.swift in Sources */,
+				7C137D7D2BF8BDAB0053D627 /* Validator.swift in Sources */,
+				7C2FD1CA2BFA08C40091AA79 /* TestViewController.swift in Sources */,
 				7CBDC2862BF709A7000501F5 /* AppDelegate.swift in Sources */,
+				7CEF88002BF8B2CF0063F807 /* AuthService.swift in Sources */,
 				7CBDC2882BF709A7000501F5 /* SceneDelegate.swift in Sources */,
 				7C3DABE22BF7628E000853E0 /* LoginViewController.swift in Sources */,
+				7CEF87F72BF8AA410063F807 /* HTTP.swift in Sources */,
 				7C3DABE02BF71C4A000853E0 /* DetailViewController.swift in Sources */,
 				7CEF87EF2BF8A5580063F807 /* Constants.swift in Sources */,
 			);
